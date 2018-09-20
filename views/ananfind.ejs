@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Analysis and Findings</title>
+ <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500' rel='stylesheet' type='text/css'>
+ <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+ <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<style type="text/css">
+    body {
+	font-family: Roboto;
+	/*width: 80%;*/
+	/*margin-top : 50px;*/
+  background: -webkit-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%); /* W3C */
+}
+
+.buttonHolder{ 
+    margin-top : 50px;
+    margin-bottom : 50px;
+    text-align: center; 
+    
+}
+.container {
+   margin : 20px auto;
+   width: 700px;
+   
+	box-shadow: 5px 10px 18px #888888;
+}
+
+p {
+    padding: 5px;
+}
+</style>
+</head>
+<body>
+    <div class ="container">
+    
+   <% if (loggeduser == '5ba3462b78558433eaa6e1ec') { %>
+ <h2>Pattern Findings:</h2>
+<ul>
+    <li>This person likes to <strong>upvote</strong>  on most of the answers</li>
+    <li>The upvotes constitute about 60% of interactions on stackoverflow</li>
+    <li>Stars constitute about 15% of interactions on stackoverflow</li>
+</ul>
+<h2>Explanation and steps:</h2>
+<ul>
+    <li>As we can see from the donut chart, AAA user upvotes on more than half of the questions/answers </li>
+    <li>Downvotes are about 20% of total interactions</li>
+    <li>Compared to BBB and CCC users, this user has the most upvote percentage</li>
+    <li>Comments constitute about 20% of interactions on stackoverflow</li>
+</ul>
+<p>I analyzed the interactions of the user on the stackoverflow and captured the clicks on various buttons.</p>
+<p>I plotted donut chart which compared each actions against the same users other actions and found out which interactions dominates.</p>
+<p>I then plotted pie charts which compares his upvotes, downvotes and comments against other users and found out how the user stacks up against other users.</p>
+<p>This helps the user in knowing how he stacks up against other users by providing intuitive data visualization.</p>
+<% } %>
+
+ <% if (loggeduser == '5ba3465c78558433eaa6e1ed') { %>
+ <h2>Pattern Findings:</h2>
+<ul>
+    <li>This person likes to <strong>downvote</strong>  on most of the answers</li>
+    <li>The downvotes constitute about 60% of interactions on stackoverflow</li>
+    <li>Comments constitute about 15% of interactions on stackoverflow</li>
+</ul>
+<h2>Explanation and steps:</h2>
+<ul>
+    <li>As we can see from the donut chart, BBB user downvotes on more than half of the questions/answers </li>
+    <li>Upvotes are about 20% of total interactions</li>
+    <li>Compared to AAA and CCC users, this user has the most downvote percentage</li>
+    <li>Stars constitute about 20% of interactions on stackoverflow</li>
+</ul>
+<p>I analyzed the interactions of the user on the stackoverflow and captured the clicks on various buttons.</p>
+<p>I plotted donut chart which compared each actions against the same users other actions and found out which interactions dominates.</p>
+<p>I then plotted pie charts which compares his upvotes, downvotes and comments against other users and found out how the user stacks up against other users.</p>
+<p>This helps the user in knowing how he stacks up against other users by providing intuitive data visualization.</p>
+<% } %>
+ <% if (loggeduser == '5ba3467b78558433eaa6e1ee') { %>
+ <h2>Pattern Findings:</h2>
+<ul>
+    <li>This person likes to <strong>comment</strong>  on most of the answers</li>
+    <li>The comments constitute about 60% of interactions on stackoverflow</li>
+    <li>Stars constitute about 15% of interactions on stackoverflow</li>
+</ul>
+<h2>Explanation and steps:</h2>
+<ul>
+    <li>As we can see from the donut chart, CCC user comments on more than half of the questions/answers </li>
+    <li>Downvotes are about 20% of total interactions</li>
+    <li>Compared to AAA and BBB users, this user has the most comment percentage</li>
+    <li>Stars constitute about 20% of interactions on stackoverflow</li>
+</ul>
+<p>I analyzed the interactions of the user on the stackoverflow and captured the clicks on various buttons.</p>
+<p>I plotted donut chart which compared each actions against the same users other actions and found out which interactions dominates.</p>
+<p>I then plotted pie charts which compares his upvotes, downvotes and comments against other users and found out how the user stacks up against other users.</p>
+<p>This helps the user in knowing how he stacks up against other users by providing intuitive data visualization.</p>
+<% } %>
+
+
+
+</div>
+
+<div class="buttonHolder">
+<form action="/Logout" method="get">
+							<button id="lg" type="submit" class="btn btn-danger">Logout</button>
+					</form>
+					</div>
+</body>
+</html>
